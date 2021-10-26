@@ -3,7 +3,7 @@ body {
 }
 
 a {
-  color: #ec7705;
+  color: #059dec;
 }
 
 .site-header nav ul {
@@ -18,7 +18,7 @@ a {
 .site-header nav a {
   display: block;
   padding: 10px;
-  background-color: #ec7705;
+  background-color: #059dec;
   color: #fff;
   text-decoration: none;
 }
@@ -27,7 +27,7 @@ a {
   display: inline-block;
   padding: 15px;
   margin-right: 10px;
-  border: 1px solid #ec7705;
+  border: 1px solid #059dec;
   border-radius: 7px;
   font-size: 80%;
   font-weight: bold;
@@ -36,7 +36,7 @@ a {
 }
 
 .btn-b {
-  background-color: #000;
+  background-color: #d8f1fe;
 }
 
 .group:before, .site-header nav ul:before,
