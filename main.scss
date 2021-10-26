@@ -1,4 +1,4 @@
-$beautifulHue: #ec7705;
+$beautifulHue: #059dec;
 
 body{
   font-family: Helvetica, sans-serif;
@@ -8,25 +8,7 @@ a {
   color: $beautifulHue;
 }
 
-.site-header nav{
-  ul {
-    padding: 0;
-    margin: 0;
-    @extend .group; 
-  }
-  li{
-    list-style: none;
-    float: left;
-    margin-right: 10px;
-  }
-  a{
-    display: block;
-    padding: 10px;
-    background-color: $beautifulHue;
-    color: #fff;
-    text-decoration: none;
-  }
-}
+@import 'header';
 
 .btn-a {
   display: inline-block;
@@ -42,10 +24,8 @@ a {
 
 .btn-b {
   @extend .btn-a;
-  background-color: #000;
+  background-color:lighten($beautifulHue,45%);
 }
-
-
 
 .group:before,
 .group:after{
