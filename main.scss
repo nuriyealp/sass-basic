@@ -1,9 +1,60 @@
-$primaryColor: #ec7705;
+$beautifulHue: #ec7705;
 
 body{
   font-family: Helvetica, sans-serif;
 }
 
 a {
-  color: $primaryColor;
+  color: $beautifulHue;
+}
+
+.site-header nav{
+  ul {
+    padding: 0;
+    margin: 0;
+    @extend .group; 
+  }
+  li{
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+  }
+  a{
+    display: block;
+    padding: 10px;
+    background-color: $beautifulHue;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.btn-a {
+  display: inline-block;
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid $beautifulHue;
+  border-radius: 7px;
+  font-size: 80%;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-b {
+  @extend .btn-a;
+  background-color: #000;
+}
+
+
+
+.group:before,
+.group:after{
+  content:"";
+  display: table;
+}
+.group:after{
+  clear: both;
+}
+.group{
+  zoom:1;
 }
