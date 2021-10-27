@@ -22,9 +22,11 @@ a {
   text-decoration: none;
 }
 
+@import 'mixin';
+
 .btn-b {
   @extend .btn-a;
-  background-color:lighten($beautifulHue,45%);
+  @include verticalGradient(white, lighten($beautifulHue, 30%) );
 }
 
 .group:before,
